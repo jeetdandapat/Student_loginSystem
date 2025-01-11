@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <section>
+    <div class="login-box">
+        <form action="/register" method="POST"> <!-- Action updated to /register and method POST -->
+            <img src="geclogo.webp" alt="logo">
+            <h2>Signup</h2>
+
+            <div class="input-box">
+                <span class="icone"><ion-icon name="person"></ion-icon></span>
+                <input type="text" name="username" required> <!-- Name attribute added -->
+                <label>Username</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" name="email" required> <!-- Name attribute added -->
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icone"><ion-icon name="call"></ion-icon></span>
+                <input type="number" name="phone" required> <!-- Name attribute added -->
+                <label>Phone</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icone"><ion-icon name="school"></ion-icon></span>
+                <input type="text" name="registration" required> <!-- Name attribute added -->
+                <label>College Registration number</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" name="password" required> <!-- Name attribute added -->
+                <label>Password</label>
+            </div>
+
+            <button type="submit">Signup</button>
+            <div class="register-link">
+                <p>Already have an account? <a href="/">Login</a></p>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
